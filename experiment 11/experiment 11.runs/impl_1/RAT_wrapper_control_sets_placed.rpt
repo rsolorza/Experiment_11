@@ -1,0 +1,82 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Thu Nov 16 23:01:56 2017
+| Host         : RyanPC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file RAT_wrapper_control_sets_placed.rpt
+| Design       : RAT_wrapper
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    29 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            9 |
+| No           | No                    | Yes                    |              24 |            6 |
+| No           | Yes                   | No                     |               4 |            1 |
+| Yes          | No                    | No                     |              57 |           24 |
+| Yes          | No                    | Yes                    |              18 |            7 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------+--------------------------------------+-------------------------------+------------------+----------------+
+|     Clock Signal    |             Enable Signal            |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++---------------------+--------------------------------------+-------------------------------+------------------+----------------+
+|  my_tc/s_clk_scaled |                                      |                               |                1 |              1 |
+|  CLK_IBUF_BUFG      |                                      | my_tc/clear                   |                1 |              4 |
+|  CLK_IBUF_BUFG      | MCU/my_prog_rom/r_DISP_EN_reg[3][0]  |                               |                2 |              4 |
+|  CLK_IBUF_BUFG      | MCU/my_prog_rom/r_tccr_reg[7][0]     |                               |                2 |              5 |
+|  CLK_IBUF_BUFG      | MCU/my_prog_rom/E[0]                 |                               |                6 |              8 |
+|  CLK_IBUF_BUFG      | MCU/my_prog_rom/r_SEGMENTS_reg[7][0] |                               |                5 |              8 |
+|  CLK_IBUF_BUFG      | MCU/my_prog_rom/t_cnt_reg[0][0]      | RESET_IBUF                    |                1 |              8 |
+|  CLK_IBUF_BUFG      | MCU/my_prog_rom/r_LEDS_HI_reg[7][0]  |                               |                5 |              8 |
+|  CLK_IBUF_BUFG      | MCU/my_prog_rom/r_tccnt0_reg[7][0]   |                               |                1 |              8 |
+|  CLK_IBUF_BUFG      | MCU/my_prog_rom/r_tccnt1_reg[7][0]   |                               |                2 |              8 |
+|  CLK_IBUF_BUFG      | MCU/my_prog_rom/r_tccnt2_reg[0][0]   |                               |                1 |              8 |
+|  CLK_IBUF_BUFG      | MCU/my_cu/E[0]                       | MCU/my_cu/AR[0]               |                6 |             10 |
+|  CLK_IBUF_BUFG      |                                      |                               |                8 |             11 |
+|  CLK_IBUF_BUFG      | MCU/my_prog_rom/RF_WR                |                               |                2 |             16 |
+|  my_tc/s_clk_scaled |                                      | my_tc/r_counter24b[0]_i_3_n_0 |                6 |             24 |
+|  CLK_IBUF_BUFG      | MCU/my_prog_rom/WE                   |                               |               10 |             40 |
++---------------------+--------------------------------------+-------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 4      |                     2 |
+| 5      |                     1 |
+| 8      |                     7 |
+| 10     |                     1 |
+| 11     |                     1 |
+| 16+    |                     3 |
++--------+-----------------------+
+
+

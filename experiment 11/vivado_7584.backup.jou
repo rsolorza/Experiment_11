@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Nov 15 22:48:59 2017
+# Process ID: 7584
+# Current directory: E:/experiment 11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3340 E:\experiment 11\experiment 11.xpr
+# Log file: E:/experiment 11/vivado.log
+# Journal file: E:/experiment 11\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/experiment 11/experiment 11.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source testbench_exp7.tcl
+add_wave {{/testbench_exp7/RAT/MCU}} 
+add_wave {{/testbench_exp7/RAT/my_tc}} 
+relaunch_sim
+add_wave {{/testbench_exp7/RAT/MCU/SCR}} 
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+add_wave {{/testbench_exp7/RAT/my_tc}} 
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/experiment 11/experiment 11.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/experiment 11/experiment 11.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_sim

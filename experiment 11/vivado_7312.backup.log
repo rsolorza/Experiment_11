@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Nov 15 22:46:29 2017
+# Process ID: 7312
+# Current directory: D:/experiment 11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13796 D:\experiment 11\experiment 11.xpr
+# Log file: D:/experiment 11/vivado.log
+# Journal file: D:/experiment 11\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/experiment 11/experiment 11.xpr}
+Scanning sources...
+Finished scanning sources
+ERROR: [Common 17-70] Application Exception: non-unique attr Db Id
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 15 22:47:02 2017...

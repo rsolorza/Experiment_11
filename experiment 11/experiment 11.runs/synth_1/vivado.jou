@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Nov 16 22:57:06 2017
+# Process ID: 14696
+# Current directory: E:/experiment 11/experiment 11.runs/synth_1
+# Command line: vivado.exe -log RAT_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RAT_wrapper.tcl
+# Log file: E:/experiment 11/experiment 11.runs/synth_1/RAT_wrapper.vds
+# Journal file: E:/experiment 11/experiment 11.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RAT_wrapper.tcl -notrace
